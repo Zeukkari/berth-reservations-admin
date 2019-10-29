@@ -1,0 +1,18 @@
+
+/* This is an example of how to form themes */
+
+
+@import "hds-brand-colors.css";
+@import "typography.css";
+
+:root {
+  --hds-theme-color-primary: var(--hds-brand-color-coat-of-arms-blue);
+  --hds-theme-color-primary-light: var(
+    --hds-brand-color-coat-of-arms-blue-light-50
+  );
+
+  --hds-theme-color-secondary: var(--hds-brand-color-fog);
+  --hds-theme-color-secondary-light: var(--hds-brand-color-fog-light-50);
+
+  --hds-theme-color-body: var(--hds-ui-color-black-90);
+}

@@ -1,0 +1,14 @@
+@import 'spacings';
+@import 'colours';
+@import '../../assets/hds-core/helsinki.css';
+
+.header {
+  color: rgb(0, 114, 198);
+  font-family: HelsinkiGrotesk-Bold;
+  font-size: 16px;
+  font-weight: bold;
+  height: 22px;
+  line-height: 19.2px;
+  width: 220px;
+  padding-bottom: 10px;
+}
