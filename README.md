@@ -1,1 +1,1 @@
-https://zeukkari.github.io/berth-reservations-admin/index.html?path=/story/components-card--sample-card
+https://zeukkari.github.io/berth-reservations-admin/index.html?path=/story/controls-card--sample-cards
