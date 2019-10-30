@@ -1,11 +1,11 @@
 @import 'spacings';
-@import 'colours';
+@import '~hds-core/lib/helsinki.css';
 
 .checkbox {
   display: inline-block;
   width: units(1);
   height: units(1);
-  border: solid $gray-200 2px;
+  border: solid var(--hds-ui-color-black-20) 2px;
   vertical-align: baseline;
   cursor: pointer;
 
@@ -14,11 +14,11 @@
   }
 
   .check {
-    fill: $white;
+    fill: var(--hds-ui-color-white);
   }
 }
 
 .checked {
-  border-color: $blue-500;
-  background-color: $blue-500;
+  border-color: var(--hds-brand-color-coat-of-arms-blue);
+  background-color: var(--hds-brand-color-coat-of-arms-blue);
 }

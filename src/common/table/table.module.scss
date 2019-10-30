@@ -1,5 +1,5 @@
-@import 'colours';
 @import 'spacings';
+@import '~hds-core/lib/helsinki.css';
 
 .table {
   margin: units(4);
@@ -14,10 +14,10 @@
   }
 
   .mainHeader {
-    background-color: $blue-500;
+    background-color: var(--hds-brand-color-coat-of-arms-blue);
     padding-top: units(1);
     padding-bottom: units(1);
-    color: $white;
+    color: var(--hds-ui-color-white);
     font-weight: bold;
   }
 
@@ -35,11 +35,11 @@
   }
 
   .tableRow {
-    background-color: $white;
+    background-color: var(--hds-ui-color-white);
   }
 
   .selected {
-    box-shadow: 0px 0px 0px 1px $blue-500;
+    box-shadow: 0px 0px 0px 1px var(--hds-brand-color-coat-of-arms-blue);
   }
 
   .tableCell {
@@ -71,7 +71,7 @@
       display: block;
       content: '';
       width: 1px;
-      background-color: $gray-200;
+      background-color: var(--hds-ui-color-black-20);
       top: units(1);
       bottom: units(0.75);
       right: 0;
