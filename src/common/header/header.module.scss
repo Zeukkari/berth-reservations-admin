@@ -1,0 +1,25 @@
+@import 'spacings';
+@import '~hds-core/lib/helsinki.css';
+
+.header {
+  width: 1440px;
+  background: rgb(0, 114, 198);
+  border-radius: 0px;
+  color: var(--hds-ui-color-white);
+  padding-left: 20px;
+
+
+  h3 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: var(--hds-text-lg);
+    font-weight: bold;
+  }
+
+  svg {
+    fill: rgb(255, 255, 255);
+    width: 85px;
+    padding: 0;
+    margin: 0;
+  }
+}

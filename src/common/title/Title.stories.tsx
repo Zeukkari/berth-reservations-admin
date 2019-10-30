@@ -4,7 +4,7 @@ import Heading from './Title';
 
 export default {
   component: Heading,
-  title: 'Title',
+  title: 'Type/Title',
 };
 
 export const simpleTitle = () => <Heading>Asiakasryhmä</Heading>;

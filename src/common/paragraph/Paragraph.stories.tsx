@@ -4,7 +4,7 @@ import Paragraph from './Paragraph';
 
 export default {
   component: Paragraph,
-  title: 'Paragraph',
+  title: 'Type/Paragraph',
 };
 
 export const text = () => <Paragraph>lorem ipsum</Paragraph>;

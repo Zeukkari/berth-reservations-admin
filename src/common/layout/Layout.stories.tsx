@@ -4,7 +4,7 @@ import Layout from './Layout';
 
 export default {
   component: Layout,
-  title: 'Layout',
+  title: 'Layout/Main',
 };
 
 const Header = (
