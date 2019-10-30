@@ -1,0 +1,46 @@
+@import 'spacings';
+@import '~hds-core/lib/helsinki.css';
+
+.brand {
+  display: inline-flex;
+  flex: 0 1 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brandIcon {
+  fill: rgb(255, 255, 255);
+  padding: 0;
+  margin: 0;
+}
+
+.brandHeading {
+  font-size: var(--hds-text-lg);
+  font-weight: bold;
+}
+
+.navLinks {
+  display: flex;
+  flex-basis: auto;
+  flex-grow: 0;
+  flex-shrink: 2;
+  justify-content: flex-end;
+  align-content: unset;
+  align-items: center;
+  margin-left: units(0.5);
+  padding: units(0.25);
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  height: units(4);
+  background-color: rgb(0, 114, 198);
+  color: var(--hds-ui-color-white);
+}

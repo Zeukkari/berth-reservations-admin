@@ -4,7 +4,7 @@ import LabelValuePair from './LabelValuePair';
 
 export default {
   component: LabelValuePair,
-  title: 'LabelValuePair',
+  title: 'Controls/LabelValuePair',
 };
 
 const dummyProps = { label: 'foo', value: 'bar' };

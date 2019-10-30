@@ -1,4 +1,6 @@
+@import 'spacings';
+@import '~hds-core/lib/helsinki.css';
+
 .icon {
-  height: inherit;
-  width: auto;
+  width: units(8);
 }

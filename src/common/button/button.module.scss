@@ -1,0 +1,46 @@
+@import "spacings";
+@import "~hds-core/lib/helsinki.css";
+
+.button {
+  display: inline-flex;
+  background-color: rgba(255, 255, 255, 1);
+  position: relative;
+  margin: 0.25em;
+  padding: 0.25em;
+  border-color: var(--hds-brand-color-coat-of-arms-blue);
+  border-style: solid;
+  border-width: 0;
+}
+
+.tool {
+  background-color: rgba(255, 255, 255, 0);
+  height: auto;
+  width: auto;
+  margin: auto;
+  font-size: units(1.5);
+  color: rgba(0, 0, 0, 1);
+  text-align: center;
+  line-height: 21px;
+}
+
+.icon {
+  background-color: rgba(255, 255, 255, 0);
+  width: auto;
+  margin: auto;
+}
+
+.error {
+  background-color: var(--hds-ui-color-error);
+}
+
+.alert {
+  background-color: var(--hds-ui-color-alert);
+}
+
+.info {
+  background-color: var(--hds-ui-color-info);
+}
+
+.success {
+  background-color: var(--hds-ui-color-success);
+}

@@ -1,5 +1,8 @@
 @import 'spacings';
+@import '~hds-core/lib/helsinki.css';
 
 .paragraph {
   width: units(24);
+  background-color: var(--hds-ui-color-white);
+  font-size: calc(units(0.5) + 2vmin);
 }

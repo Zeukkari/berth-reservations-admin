@@ -4,7 +4,7 @@ import Table from './Table';
 
 export default {
   component: Table,
-  title: 'Table',
+  title: 'Controls/Table',
 };
 
 const MOUNTAINS = [

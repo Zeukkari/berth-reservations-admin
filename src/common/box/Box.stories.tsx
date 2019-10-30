@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Card from './Card';
-import Box from '../box/Box';
+import Box from './Box';
+import Card from '../card/Card';
 import Paragraph from '../paragraph/Paragraph';
 import LabelValuePair from '../labelValuePair/LabelValuePair';
 
@@ -28,22 +28,11 @@ const P3 = () => (
 );
 
 export default {
-  component: Card,
-  title: 'Controls/Card',
+  component: Box,
+  title: 'Layout/Box',
 };
 
-const content = P1;
-
-export const sampleCard = () => (
-  <Card title="Asiakastiedot">
-    <P1 />
-    <hr />
-    <P3 />
-    <hr />
-    <P2 />
-  </Card>
-);
-
+export const defaultLayout = () => <Box>content</Box>;
 const MockCard = () => (
   <Card title="Asiakastiedot">
     <P1 />
@@ -72,5 +61,3 @@ export const sampleCards = () => (
     <MockCard />
   </Box>
 );
-
-export const emptyCard = () => <Card title="Hakemukset (0)">{content}</Card>;
