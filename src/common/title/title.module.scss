@@ -1,9 +1,9 @@
 @import 'spacings';
-@import 'colours';
 @import 'fonts';
+@import '~hds-core/lib/helsinki.css';
 
 .header {
-  color: $blue-500;
+  color: var(--hds-brand-color-coat-of-arms-blue);
   font-size: font-size(16);
   font-weight: bold;
   height: units(1.5);

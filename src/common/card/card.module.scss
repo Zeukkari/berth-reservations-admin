@@ -1,5 +1,5 @@
 @import 'spacings';
-@import 'colours';
+@import '~hds-core/lib/helsinki.css';
 
 .container {
   width: 100%;
@@ -9,7 +9,7 @@
 
   header {
     width: 100%;
-    background-color: $blue-500;
+    background-color: var(--hds-brand-color-coat-of-arms-blue);
     padding: units(0.5) units(1);
     font-size: calc(10px + 2vmin);
     color: white;
