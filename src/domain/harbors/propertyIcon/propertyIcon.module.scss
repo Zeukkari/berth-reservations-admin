@@ -1,5 +1,4 @@
 @import 'spacings';
-@import 'colours';
 
 .propertyIcon {
   display: inline-block;
@@ -7,11 +6,11 @@
   padding: units(0.25);
   width: units(1.5);
   height: units(1.5);
-  border: solid 2px $black;
+  border: solid 2px var(--hds-ui-color-black);
   text-align: center;
 }
 
 .disabled {
-  fill: $gray-200;
-  border-color: $gray-200;
+  fill: var(--hds-ui-color-black-20);
+  border-color: var(--hds-ui-color-black-20);
 }
