@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ApolloClient from 'apollo-boost';
 import { ApolloProvider } from '@apollo/react-hooks';
+import { InMemoryCache } from 'apollo-cache-inmemory';
 import * as Sentry from '@sentry/browser';
 
 import App from './domain/app/App';
@@ -17,6 +18,7 @@ const {
 } = process.env;
 
 const client = new ApolloClient({
+  cache: new InMemoryCache(),
   uri: REACT_APP_API_URI,
 });
 

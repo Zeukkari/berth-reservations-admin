@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
+import CustomersPage from '../customers/CustomerPageContainer';
 import HarborsPage from '../harbors/HarborsPageContainer';
 import styles from './app.module.scss';
 
@@ -19,6 +20,7 @@ const App: React.FC = () => {
           </div>
         </Route>
         <Route path="/harbors" component={HarborsPage} />
+        <Route path="/customers" component={CustomersPage} />
       </Switch>
     </Router>
   );
