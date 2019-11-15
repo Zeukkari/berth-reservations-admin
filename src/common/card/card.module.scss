@@ -1,33 +1,10 @@
 @import 'spacings';
-@import 'colours';
+@import "../../assets/hds/helsinki.css";
 
-.container {
+.card {
+  flex: 1;
   width: 100%;
-  padding: .5rem 1rem;
-  margin-right: auto;
-  margin-left: auto;
-
-  header {
-    width: 100%;
-    background-color: $blue-500;
-    padding: units(0.5) units(1);
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
+  background-color: var(--hds-theme-color-primary);  
+  padding: units(0.5) units(1);
+  color: var(--hds-theme-color-primary-heading);
 }
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
-

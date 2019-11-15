@@ -5,6 +5,23 @@ import Card from '../card/Card';
 import Paragraph from '../paragraph/Paragraph';
 import LabelValuePair from '../labelValuePair/LabelValuePair';
 
+export default {
+  component: Box,
+  title: 'Box',
+};
+
+export const box = () => (
+  <>
+    <Box>default</Box>
+    <Box flex="1" basis="1/2">
+      flex half
+    </Box>
+    <Box flex="1" basis="full">
+      flex full
+    </Box>
+  </>
+);
+
 const P1 = () => (
   <Paragraph>
     <LabelValuePair label="Nimi" value="Mikko Mallintaja" />
@@ -26,11 +43,6 @@ const P3 = () => (
     <p>Yksityinen asiakas</p>
   </Paragraph>
 );
-
-export default {
-  component: Box,
-  title: 'Layout/Box',
-};
 
 export const defaultLayout = () => <Box>content</Box>;
 const MockCard = () => (

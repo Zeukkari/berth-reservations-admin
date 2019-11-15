@@ -3,13 +3,47 @@ import classNames from 'classnames';
 
 import styles from './box.module.scss';
 
-interface Props {
+export type Props = {
   children: React.ReactNode;
-  className?: string;
-}
+  align?: 'start' | 'center' | 'end' | 'baseline' | 'stretch';
+  alignContent?: 'start' | 'center' | 'end' | 'between' | 'around' | 'stretch';
+  alignSelf?: 'start' | 'center' | 'end' | 'stretch';
+  basis?: 'auto' | 'full' | '1/2' | '1/3' | '2/3' | '1/4' | '2/4' | '3/4';
+  justify?:
+    | 'around'
+    | 'between'
+    | 'center'
+    | 'end'
+    | 'evenly'
+    | 'start'
+    | 'stretch';
+  flexDirection?: 'column' | 'row';
+  flex?: '1' | '0';
+} & React.DOMAttributes<HTMLButtonElement>;
 
-const Box = ({ children, className }: Props) => (
-  <div className={classNames(styles.box, className)}>{children}</div>
+const Box: React.SFC<Props> = ({
+  children,
+  align = 'start',
+  alignContent = 'contained',
+  alignSelf = 'standard',
+  basis = 'auto',
+  flexDirection = 'column',
+  justify,
+  flex = 0,
+}) => (
+  <div className={classNames(styles.container)}>
+    <div
+      data-align={align}
+      data-alignContent={alignContent}
+      data-alignSelf={alignSelf}
+      data-basis={basis}
+      data-flex-direction={flexDirection}
+      data-justify-content={justify}
+      className={classNames(styles.box, styles.flex, styles.basis)}
+    >
+      {children}
+    </div>
+  </div>
 );
 
 export default Box;

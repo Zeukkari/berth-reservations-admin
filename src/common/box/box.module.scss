@@ -1,8 +1,135 @@
-@import 'spacings';
-@import 'breakpoints';
+@import "colours";
+@import "spacings";
+@import "breakpoints";
+@import "../../assets/hds/helsinki.css";
+
+.container {
+  display: flex;
+
+}
 
 .box {
-  display: inline-block;
-  flex-flow: row nowrap;
-  background-color: white;
+  background-color: var(--hds-ui-color-white);
+  outline: blue dashed 1px;
+}
+
+.flex[data-flex="1"] {
+  flex: 1;
+}
+.flex[data-flex="0"] {
+  flex: 0;
+}
+.flex[data-flex-direction="row"] {
+  flex-direction: row;
+}
+
+.basis {
+  flex-basis: auto;
+}
+
+.basis[data-basis="full"] {
+  flex-basis: 100%;
+}
+.basis[data-basis="1/2"] {
+  flex-basis: 50%;
+}
+.basis[data-basis="1/3"] {
+  flex-basis: 33%;
+}
+.basis[data-basis="2/3"] {
+  flex-basis: 66%;
+}
+.basis[data-basis="1/4"] {
+  flex-basis: 25%;
+}
+.basis[data-basis="2/4"] {
+  flex-basis: 50%;
+}
+.basis[data-basis="3/4"] {
+  flex-basis: 75%;
+}
+
+.align {
+  align-self: auto;
+}
+
+.alignContent {
+  align-content: center;
+}
+
+.alignSelf {
+  align-self: auto;
+}
+.alignSelf[data-alignSelf="start"] {
+  align-self: flex-start;
+}
+.alignSelf[data-alignSelf="center"] {
+  align-self: center;
+}
+.alignSelf[data-alignSelf="end"] {
+  align-self: flex-end;
+}
+.alignSelf[data-alignSelf="stretch"] {
+  align-self: stretch;
+}
+
+.align {
+  align-items: auto;
+}
+.align[data-align="start"] {
+  align-items: flex-start;
+}
+.align[data-align="center"] {
+  align-items: center;
+}
+.align[data-align="end"] {
+  align-items: flex-end;
+}
+.align[data-align="baseline"] {
+  align-items: baseline;
+}
+.align[data-align="stretch"] {
+  align-items: stretch;
+}
+
+.alignContent {
+  align-content: auto;
+}
+.alignContent[data-alignContent="start"] {
+  align-content: flex-start;
+}
+.alignContent[data-alignContent="center"] {
+  align-content: center;
+}
+.alignContent[data-alignContent="end"] {
+  align-content: flex-end;
+}
+.alignContent[data-alignContent="between"] {
+  align-content: space-between;
+}
+.alignContent[data-alignContent="stretch"] {
+  align-content: stretch;
+}
+.alignContent[data-alignContent="around"] {
+  align-content: space-around;
+}
+
+
+.justify {
+  justify-content: baseline;
+}
+.justify[data-justify-content="start"] {
+  justify-content: start;
+}
+.justify[data-justify-content="center"] {
+  justify-content: center;
+}
+.justify[data-justify-content="end"] {
+  justify-content: end;
+}
+.justify[data-justify-content="between"] {
+  justify-content: space-between;
+}
+.justify[data-justify-content="stretch"] {
+  justify-content: stretch;
 }

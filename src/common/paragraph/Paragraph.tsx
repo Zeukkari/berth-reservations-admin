@@ -11,11 +11,11 @@ interface Props {
 }
 
 const Paragraph = ({ title, children, className }: Props) => (
-  <article className={classNames(styles.paragraph, className)}>
+  <p className={classNames(styles.paragraph, className)}>
     {title && <Title>{title}</Title>}
 
-    <p>{children}</p>
-  </article>
+    {children}
+  </p>
 );
 
 export default Paragraph;
