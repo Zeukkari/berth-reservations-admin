@@ -12,10 +12,10 @@ const Card = ({
   children: React.ReactNode;
   passthroughProps?: BoxProps;
 }) => (
-  <Box {...passthroughProps}>
+  <>
     {title && <header className={styles.card}>{title}</header>}
-    <>{children}</>
-  </Box>
+    <Box {...passthroughProps}>{children}</Box>
+  </>
 );
 
 export default Card;
