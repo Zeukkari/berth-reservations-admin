@@ -25,64 +25,66 @@ interface Props {
 
 const CustomerDetails = ({ data }: Props) => {
   return (
-    <Box flex="1">
-      <Card>
-        <Paragraph>
-          <Text color="brand" size="xs">
-            {data.name}
-          </Text>{' '}
-        </Paragraph>
-        <Paragraph title="Osoite">
-          <Text color="brand" size="xs">
+    <Box flex="1" flexDirection="row">
+      <div style={{ display: 'flex', flexDirection: 'row' }}>
+        <Card flex="1" basis="1/2">
+          <Paragraph>
+            <Text color="brand" size="xs">
+              {data.name}
+            </Text>{' '}
+          </Paragraph>
+          <Paragraph title="Osoite">
+            <Text color="brand" size="xs">
+              <Text color="brand" size="xs">
+                {data.name}
+              </Text>
+            </Text>
+          </Paragraph>
+          <Paragraph>
             <Text color="brand" size="xs">
               {data.name}
             </Text>
-          </Text>
-        </Paragraph>
-        <Paragraph>
-          <Text color="brand" size="xs">
-            {data.name}
-          </Text>
-        </Paragraph>
-      </Card>
-      <Card>
-        <Paragraph>
-          <Text color="brand" size="xs">
-            {data.name}
-          </Text>{' '}
-        </Paragraph>
-        <Paragraph title="Osoite">
-          <Text color="brand" size="xs">
+          </Paragraph>
+        </Card>
+        <Card flex="1" basis="1/2">
+          <Paragraph>
+            <Text color="brand" size="xs">
+              {data.name}
+            </Text>{' '}
+          </Paragraph>
+          <Paragraph title="Osoite">
+            <Text color="brand" size="xs">
+              <Text color="brand" size="xs">
+                {data.name}
+              </Text>
+            </Text>
+          </Paragraph>
+          <Paragraph>
             <Text color="brand" size="xs">
               {data.name}
             </Text>
-          </Text>
-        </Paragraph>
-        <Paragraph>
-          <Text color="brand" size="xs">
-            {data.name}
-          </Text>
-        </Paragraph>
-      </Card>
-      <Card>
-        <Paragraph>
-          <Text color="brand" size="xs">
-            {data.name}
-          </Text>{' '}
-        </Paragraph>
-        <Paragraph title="Osoite">
-          <Text color="brand" size="xs">
+          </Paragraph>
+        </Card>
+        <Card flex="1" basis="1/2">
+          <Paragraph>
+            <Text color="brand" size="xs">
+              {data.name}
+            </Text>{' '}
+          </Paragraph>
+          <Paragraph title="Osoite">
+            <Text color="brand" size="xs">
+              <Text color="brand" size="xs">
+                {data.name}
+              </Text>
+            </Text>
+          </Paragraph>
+          <Paragraph>
             <Text color="brand" size="xs">
               {data.name}
             </Text>
-          </Text>
-        </Paragraph>
-        <Paragraph>
-          <Text color="brand" size="xs">
-            {data.name}
-          </Text>
-        </Paragraph>
-      </Card>
+          </Paragraph>
+        </Card>
+      </div>
     </Box>
   );
 };

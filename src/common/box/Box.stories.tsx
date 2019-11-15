@@ -22,32 +22,6 @@ export const box = () => (
   </>
 );
 
-export const box2 = () => (
-  <>
-    <Box>default</Box>
-    <Box flex="1" basis="1/2">
-      flex half
-    </Box>
-    <Box flex="1" basis="full">
-      flex full
-    </Box>
-  </>
-);
-
-export const box3 = () => (
-  <Box flex="1" basis="2/3" flexDirection="row">
-    <Box flex="1" basis="1/4">
-      flex half
-    </Box>
-    <Box flex="1" basis="1/4">
-      flex half
-    </Box>
-    <Box flex="1" basis="1/4">
-      flex half
-    </Box>
-  </Box>
-);
-
 const P1 = () => (
   <Paragraph>
     <LabelValuePair label="Nimi" value="Mikko Mallintaja" />
@@ -81,13 +55,8 @@ const MockCard = () => (
   </Card>
 );
 
-export const sampleCards2 = () => (
-    <MockCard />
-);
-
-
 export const sampleCards = () => (
-  <Box basis="1/2">
+  <Box>
     <MockCard />
     <MockCard />
     <MockCard />

@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Card from './Card';
-import Box from '../box/Box';
 import Paragraph from '../paragraph/Paragraph';
 import LabelValuePair from '../labelValuePair/LabelValuePair';
 

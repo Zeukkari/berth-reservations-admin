@@ -24,7 +24,7 @@ export type Props = {
 const Box: React.SFC<Props> = ({
   children,
   align = 'start',
-  alignContent = 'start',
+  alignContent = 'contained',
   alignSelf = 'standard',
   basis = 'auto',
   flexDirection = 'column',
@@ -37,7 +37,6 @@ const Box: React.SFC<Props> = ({
       data-alignContent={alignContent}
       data-alignSelf={alignSelf}
       data-basis={basis}
-      data-flex={flex}
       data-flex-direction={flexDirection}
       data-justify-content={justify}
       className={classNames(styles.box, styles.flex, styles.basis)}
