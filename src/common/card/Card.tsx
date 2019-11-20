@@ -3,15 +3,13 @@ import React from 'react';
 import Box, { Props as BoxProps } from '../box/Box';
 import styles from './card.module.scss';
 
-const Card = ({
-  title,
-  children,
-  ...passthroughProps
-}: {
-  title?: string;
+export type Props = {
   children: React.ReactNode;
-  passthroughProps?: BoxProps;
-}) => (
+  title?: string;
+} & React.DOMAttributes<HTMLButtonElement> &
+  BoxProps;
+
+const Card: React.SFC<Props> = ({ title, children, ...passthroughProps }) => (
   <>
     {title && <header className={styles.card}>{title}</header>}
     <Box {...passthroughProps}>{children}</Box>
