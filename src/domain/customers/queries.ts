@@ -1,7 +1,7 @@
 import gql from 'graphql-tag';
 
-export const HARBORS_QUERY = gql`
-  query HARBORS {
+export const CUSTOMER_QUERY = gql`
+  query CUSTOMERS {
     harbors {
       edges {
         node {
