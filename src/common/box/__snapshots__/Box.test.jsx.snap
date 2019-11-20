@@ -1,3 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Box renders normally 1`] = `"<div class=\\"box\\">Content</div>"`;
+exports[`Box renders normally 1`] = `"<div class=\\"container\\"><div data-align=\\"start\\" data-aligncontent=\\"contained\\" data-alignself=\\"standard\\" data-basis=\\"auto\\" data-flex-direction=\\"column\\" class=\\"box flex basis\\">Content</div></div>"`;

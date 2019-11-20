@@ -61,16 +61,16 @@
 .alignSelf {
   align-self: auto;
 }
-.alignSelf[data-alignSelf="start"] {
+.alignSelf[data-alignself="start"] {
   align-self: flex-start;
 }
-.alignSelf[data-alignSelf="center"] {
+.alignSelf[data-alignself="center"] {
   align-self: center;
 }
-.alignSelf[data-alignSelf="end"] {
+.alignSelf[data-alignself="end"] {
   align-self: flex-end;
 }
-.alignSelf[data-alignSelf="stretch"] {
+.alignSelf[data-alignself="stretch"] {
   align-self: stretch;
 }
 
@@ -96,22 +96,22 @@
 .alignContent {
   align-content: auto;
 }
-.alignContent[data-alignContent="start"] {
+.alignContent[data-aligncontent="start"] {
   align-content: flex-start;
 }
-.alignContent[data-alignContent="center"] {
+.alignContent[data-aligncontent="center"] {
   align-content: center;
 }
-.alignContent[data-alignContent="end"] {
+.alignContent[data-aligncontent="end"] {
   align-content: flex-end;
 }
-.alignContent[data-alignContent="between"] {
+.alignContent[data-aligncontent="between"] {
   align-content: space-between;
 }
-.alignContent[data-alignContent="stretch"] {
+.alignContent[data-aligncontent="stretch"] {
   align-content: stretch;
 }
-.alignContent[data-alignContent="around"] {
+.alignContent[data-aligncontent="around"] {
   align-content: space-around;
 }
 

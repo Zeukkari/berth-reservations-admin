@@ -34,8 +34,8 @@ const Box: React.SFC<Props> = ({
   <div className={classNames(styles.container)}>
     <div
       data-align={align}
-      data-alignContent={alignContent}
-      data-alignSelf={alignSelf}
+      data-aligncontent={alignContent}
+      data-alignself={alignSelf}
       data-basis={basis}
       data-flex-direction={flexDirection}
       data-justify-content={justify}

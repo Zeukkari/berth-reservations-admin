@@ -1,5 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`common/Card renders a Card component 1`] = `"<div><div class=\\"container\\"><header>placeholder</header></div></div>"`;
+exports[`common/Card renders a Card component 1`] = `"<header class=\\"card\\">placeholder</header><div class=\\"container\\"><div data-align=\\"start\\" data-aligncontent=\\"contained\\" data-alignself=\\"standard\\" data-basis=\\"auto\\" data-flex-direction=\\"column\\" class=\\"box flex basis\\"></div></div>"`;
 
-exports[`common/Card renders a Card component without title 1`] = `"<div><div class=\\"container\\"><header></header></div></div>"`;
+exports[`common/Card renders a Card component without title 1`] = `"<div class=\\"container\\"><div data-align=\\"start\\" data-aligncontent=\\"contained\\" data-alignself=\\"standard\\" data-basis=\\"auto\\" data-flex-direction=\\"column\\" class=\\"box flex basis\\"></div></div>"`;
