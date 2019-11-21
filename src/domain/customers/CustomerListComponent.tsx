@@ -1,5 +1,4 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 
 import Table from '../../common/table/Table';
 import CustomerDetails from './CustomerDetailsComponent';
@@ -9,7 +8,7 @@ export interface CustomerData {
   contactMethod?: string;
   email?: string;
   firstName?: string;
-  id?: string;
+  id: string;
   image?: string;
   invoicingType?: string;
   language?: string;
@@ -18,50 +17,38 @@ export interface CustomerData {
   phone?: string;
 }
 
-interface TableData {
-  goToDetails: string;
-  group: string;
-  invoice: string;
-  name: string;
-  queue: string;
-  startDate: string;
-  thing: string;
-}
-
 interface Props {
-  data: CustomerData | null | any;
+  data: CustomerData | any;
 }
 
 const HarborsListComponent = ({ data }: Props) => {
-  const { t } = useTranslation();
-
   const columns = [
     {
-      Header: t('customers.tableHeaders.queue'),
+      Header: 'Jono',
       accessor: 'queue',
     },
     {
-      Header: t('customers.tableHeaders.name'),
+      Header: 'Asiakas',
       accessor: 'name',
     },
     {
-      Header: t('customers.tableHeaders.startDate'),
+      Header: 'Liittynyt',
       accessor: 'startDate',
     },
     {
-      Header: t('customers.tableHeaders.group'),
+      Header: 'Asiakasryhmä',
       accessor: 'group',
     },
     {
-      Header: t('customers.tableHeaders.thing'),
+      Header: 'Asia',
       accessor: 'thing',
     },
     {
-      Header: t('customers.tableHeaders.invoice'),
+      Header: 'Laskuja',
       accessor: 'invoice',
     },
     {
-      Header: t('customers.tableHeaders.goToDetails'),
+      Header: 'Avaa',
       accessor: 'goToDetails',
     },
   ];
