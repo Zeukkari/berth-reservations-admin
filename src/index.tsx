@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ApolloClient from 'apollo-boost';
-import { ApolloProvider } from '@apollo/react-hooks';
 import * as Sentry from '@sentry/browser';
+import { ApolloProvider, useQuery, useApolloClient } from '@apollo/react-hooks';
+import ApolloClient from 'apollo-boost';
+import gql from 'graphql-tag';
+import { InMemoryCache } from 'apollo-cache-inmemory';
 
 import App from './domain/app/App';
-import * as serviceWorker from './serviceWorker';
+import { resolvers, typeDefs } from './resolvers';
 import './locales/i18n';
-
 import './assets/styles/main.scss';
+
 
 const {
   REACT_APP_API_URI,
@@ -16,7 +18,42 @@ const {
   REACT_APP_SENTRY_ENVIRONMENT,
 } = process.env;
 
+const IS_LOGGED_IN = gql`
+  query IsUserLoggedIn {
+    isLoggedIn @client
+  }
+`;
+
+const cache = new InMemoryCache();
+
+cache.writeData({
+  data: { isLoggedIn: !!localStorage.getItem('token') },
+});
+
+function IsLoggedIn() {
+  const { data } = useQuery(IS_LOGGED_IN);
+  return <div>{` is logged in: ${data.isLoggedIn}`}</div>;
+}
+
+export default function LogoutButton() {
+  const client = useApolloClient();
+  const { data } = useQuery(IS_LOGGED_IN);
+  return (
+    <button
+      onClick={() => {
+        client.writeData({ data: { isLoggedIn: !data.isLoggedIn } });
+        localStorage.clear();
+      }}
+    >
+      Logout
+    </button>
+  );
+}
+
 const client = new ApolloClient({
+  cache: cache,
+  resolvers,
+  typeDefs,
   uri: REACT_APP_API_URI,
 });
 
@@ -27,12 +64,10 @@ Sentry.init({
 
 ReactDOM.render(
   <ApolloProvider client={client}>
+    <IsLoggedIn />
+    <LogoutButton />
     <App />
   </ApolloProvider>,
   document.getElementById('root')
 );
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
