@@ -1,5 +1,4 @@
 import { HARBORS } from './__generated__/HARBORS';
-
 export interface HarborData {
   electricity: number;
   gate: number;
