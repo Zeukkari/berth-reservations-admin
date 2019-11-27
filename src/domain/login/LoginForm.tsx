@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+import { Section } from 'hds-react'
 
 import Layout from '../../common/layout/Layout';
 import HelsinkiLogo from '../../common/helsinkiLogo/HelsinkiLogo';
 import styles from '../../common/header/header.module.scss';
+
 
 const Header = () => (
   <header className={styles.header}>
@@ -30,6 +32,8 @@ export default class LoginForm extends Component<Props> {
   render() {
     return (
       <Layout header={<Header />} sidebar={<div></div>}>
+        <Section color="secondary">
+        <h1>Prototype stuff</h1>
         <form onSubmit={this.onSubmit}>
           <input
             required
@@ -41,6 +45,7 @@ export default class LoginForm extends Component<Props> {
           />
           <button type="submit">Log in</button>
         </form>
+        </Section>
       </Layout>
     );
   }
