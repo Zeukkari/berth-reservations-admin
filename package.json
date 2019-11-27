@@ -57,6 +57,7 @@
     ]
   },
   "devDependencies": {
+    "@graphql-codegen/typescript": "^1.9.0",
     "@storybook/addon-a11y": "^5.2.5",
     "@storybook/addon-actions": "^5.2.5",
     "@storybook/addon-docs": "^5.2.5",
@@ -74,6 +75,7 @@
     "enzyme-adapter-react-16": "^1.14.0",
     "eslint-config-prettier": "^6.3.0",
     "eslint-plugin-prettier": "^3.1.1",
+    "graphiql": "^0.17.0",
     "husky": "^3.0.9",
     "prettier": "^1.18.2"
   }
