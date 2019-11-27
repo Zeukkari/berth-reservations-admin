@@ -16,10 +16,7 @@ const App: React.FC = () => {
           <Route path="/harbors/:id" component={IndividualHarborPage} />
           <Route path="/harbors" component={HarborsPage} />
           <Route path="/customers" component={CustomersPage} />
-<<<<<<< HEAD
           <Route path="/debug" component={DebugPage} />
-=======
->>>>>>> resync customer list page with other development
         </Switch>
       </Page>
     </Router>

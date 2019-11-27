@@ -29,7 +29,7 @@ export default class LoginForm extends Component<Props> {
 
   render() {
     return (
-      <div>
+      <Layout header={<Header />} sidebar={<div></div>}>
         <form onSubmit={this.onSubmit}>
           <input
             required
@@ -41,7 +41,7 @@ export default class LoginForm extends Component<Props> {
           />
           <button type="submit">Log in</button>
         </form>
-      </div>
+      </Layout>
     );
   }
 }
