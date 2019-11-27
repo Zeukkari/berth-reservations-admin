@@ -10,6 +10,7 @@ import { createClient } from './apollo/index';
 import * as serviceWorker from './serviceWorker';
 import './locales/i18n';
 import './assets/styles/main.scss';
+import 'hds-core/lib/helsinki.css';
 
 const { REACT_APP_SENTRY_DSN, REACT_APP_SENTRY_ENVIRONMENT } = process.env;
 

@@ -8103,6 +8103,19 @@ hastscript@^5.0.0:
     property-information "^5.0.1"
     space-separated-tokens "^1.0.0"
 
+hds-core@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/hds-core/-/hds-core-0.3.0.tgz#88f63031034a01e04dc05501e2184dccf20e122d"
+  integrity sha512-Xc9JQnadujYUJ7gKKHAjQjkTgZqrhHolyuhuq/WOhevow1GbFG9d51nwe2mPyOgewJhFibpRdzU1I77MY770UQ==
+
+hds-react@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/hds-react/-/hds-react-0.3.1.tgz#ffb813c350265b27a607884b0d92ad0280252863"
+  integrity sha512-o5BreSOYlVcDfrIJouLBVsJBR29EG8A/AWhOGpdgMvNFO32x8UoaZR5SBIGZt4EdTVKrubiPmIsPmySIcLwYpQ==
+  dependencies:
+    hds-core "^0.3.0"
+    lodash.uniqueid "^4.0.1"
+
 he@1.2.0, he@1.2.x, he@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
@@ -10123,6 +10136,11 @@ lodash.uniq@4.5.0, lodash.uniq@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
+
+lodash.uniqueid@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/lodash.uniqueid/-/lodash.uniqueid-4.0.1.tgz#3268f26a7c88e4f4b1758d679271814e31fa5b26"
+  integrity sha1-MmjyanyI5PSxdY1nknGBTjH6WyY=
 
 lodash.xorby@^4.7.0:
   version "4.7.0"
