@@ -29,41 +29,31 @@ const Page: React.SFC = ({ children }) => {
       sidebar={
         <Sidebar>
           {[
-            <Expandable
-              key="harbors"
-              onClick={() => history.push('/harbors')}
-              label={
-                <InternalLink to="harbors">
-                  <Button
-                    variant="text"
-                    icon={<Icon name="fence" color="standard" />}
-                  >
-                    <Text bold>{t('common.sidebar.harbors')}</Text>
-                  </Button>
-                </InternalLink>
-              }
-            ></Expandable>,
-            <Expandable
-              key="customers"
-              onClick={() => history.push('/customers')}
-              label={
-                <InternalLink to="customers">
-                  <Button
-                    variant="text"
-                    icon={<Icon name="individual" color="standard" />}
-                  >
-                    <Text bold>{t('common.sidebar.customers')}</Text>
-                  </Button>
-                </InternalLink>
-              }
-            ></Expandable>,
+            <InternalLink to="harbors">
+              <Button
+                variant="text"
+                color="brand"
+                icon={<Icon name="registeredBoat" color="secondary" />}
+              >
+                <Text bold>{t('common.sidebar.harbors')}</Text>
+              </Button>
+            </InternalLink>,
+            <InternalLink to="customers">
+              <Button
+                variant="text"
+                icon={<Icon name="individual" color="secondary" />}
+              >
+                <Text bold>{t('common.sidebar.customers')}</Text>
+              </Button>
+            </InternalLink>,
+
             <Expandable
               key="debug"
               label={
                 <InternalLink to="debug">
                   <Button
                     variant="text"
-                    icon={<Icon name="individual" color="standard" />}
+                    icon={<Icon name="dollyEmpty" color="secondary" />}
                   >
                     <Text bold>DEBUG</Text>
                   </Button>

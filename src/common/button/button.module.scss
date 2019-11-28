@@ -3,7 +3,7 @@
 @import 'fonts';
 
 .button {
-  --vene-button-color: var(--hds-theme-color-primary);
+  --vene-button-color: var(--hds-ui-color-black-90);
 
   padding: units(0.5);
   cursor: pointer;
@@ -19,7 +19,11 @@
 .secondary {
   --vene-button-color: var(--hds-ui-color-black-20);
   color: $black;
-  fill: $black;
+}
+
+.brand {
+  --vene-button-color: var(--hds-theme-color-primary);
+  color: var(--vene-button-color);
 }
 
 .standard {
@@ -52,7 +56,6 @@
 .text {
   border: none;
   color: var(--vene-button-color);
-  fill: var(--vene-button-color);
   background: none;
   padding: 0;
 }

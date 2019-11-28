@@ -10,6 +10,8 @@
   shape-rendering: inherit;
   transform: translate3d(0, 0, 0);
 
+  color: var(--hds-theme-color-body);
+
   width: var(--icon-dimension);
   height: var(--icon-dimension);
 }
@@ -48,7 +50,7 @@
 }
 
 .secondary {
-  --icon-stroke-color: var(--hds-ui-color-info);
+  --icon-stroke-color: var(--hds-theme-color-body);
 }
 
 .critical {
