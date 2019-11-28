@@ -7,7 +7,6 @@ export default function LogoutButton() {
   const client = useApolloClient();
   return (
     <Button
-      color="secondary"
       onClick={() => {
         client.writeData({ data: { isLoggedIn: false } });
         localStorage.clear();

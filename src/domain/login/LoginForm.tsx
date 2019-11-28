@@ -45,9 +45,7 @@ export default class LoginForm extends Component<Props> {
               data-testid="login-input"
               onChange={this.onChange}
             />
-            <Button color="brand" onClick={this.onSubmit}>
-              Log in
-            </Button>
+            <Button onClick={this.onSubmit}>Log in</Button>
           </form>
         </Section>
       </Layout>
