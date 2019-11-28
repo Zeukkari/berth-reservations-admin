@@ -29,19 +29,17 @@ export default class LoginForm extends Component<Props> {
 
   render() {
     return (
-      <Layout header={<CustomHeader />} sidebar={<div></div>}>
-        <form onSubmit={this.onSubmit}>
-          <input
-            required
-            type="email"
-            name="email"
-            placeholder="Email"
-            data-testid="login-input"
-            onChange={this.onChange}
-          />
-          <button type="submit">Log in</button>
-        </form>
-      </Layout>
+      <form onSubmit={this.onSubmit}>
+        <input
+          required
+          type="email"
+          name="email"
+          placeholder="Email"
+          data-testid="login-input"
+          onChange={this.onChange}
+        />
+        <button type="submit">Log in</button>
+      </form>
     );
   }
 }

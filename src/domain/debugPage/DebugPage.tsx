@@ -38,18 +38,16 @@ const IndividualHarborPage: React.SFC = ({ children }) => {
         </Notification>
       </Section>
 
-      <Section color="plain">
-        <Notification labelText="selected harbor id's:">
-          <List>
-            {cartItems &&
-              cartItems.length > 0 &&
-              cartItems.map((item: any) => (
-                <ListItem key={item}>{item}</ListItem>
-              ))}
-          </List>
-          <HarborsPage />
-        </Notification>
+      <Section color="secondary">
+        <Notification labelText="selected harbor id's:"></Notification>
       </Section>
+
+      <List>
+        {cartItems &&
+          cartItems.length > 0 &&
+          cartItems.map((item: any) => <ListItem key={item}>{item}</ListItem>)}
+      </List>
+      <HarborsPage />
     </>
   );
 };

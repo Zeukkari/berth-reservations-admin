@@ -33,21 +33,19 @@ export default class LoginForm extends Component<Props> {
   render() {
     return (
       <Layout header={<CustomHeader />} sidebar={<div></div>}>
-        <Section color="secondary">
-          <h1>Prototype stuff</h1>
-          <p>Insert any syntactically valid email. </p>
-          <form onSubmit={this.onSubmit}>
-            <input
-              required
-              type="email"
-              name="email"
-              placeholder="Email"
-              data-testid="login-input"
-              onChange={this.onChange}
-            />
-            <Button onClick={this.onSubmit}>Log in</Button>
-          </form>
-        </Section>
+        <h1>Prototype stuff</h1>
+        <p>Insert any syntactically valid email. </p>
+        <form onSubmit={this.onSubmit}>
+          <input
+            required
+            type="email"
+            name="email"
+            placeholder="Email"
+            data-testid="login-input"
+            onChange={this.onChange}
+          />
+          <Button onClick={this.onSubmit}>Log in</Button>
+        </form>
       </Layout>
     );
   }

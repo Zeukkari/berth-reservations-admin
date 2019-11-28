@@ -12,7 +12,7 @@ const App: React.FC = () => {
     <Router>
       <Page>
         <Switch>
-          <Route exact path="/" component={HarborsPage} />
+          <Route exact path="/" component={DebugPage} />
           <Route path="/harbors/:id" component={IndividualHarborPage} />
           <Route path="/harbors" component={HarborsPage} />
           <Route path="/customers" component={CustomersPage} />
