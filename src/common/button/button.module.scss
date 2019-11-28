@@ -3,21 +3,21 @@
 @import 'fonts';
 
 .button {
-  --vene-button-color: #{$blue-500};
+  --vene-button-color: var(--hds-theme-color-primary);
 
   padding: units(0.5);
   cursor: pointer;
   font-size: font-size(16);
-  color: $white;
-  fill: $white;
+  color: var(--hds-ui-color-white);
+  fill: var(--hds-ui-color-white);
 }
 
 .critical {
-  --vene-button-color: #{$red-500};
+  --vene-button-color: var(--hds-ui-color-error);
 }
 
 .secondary {
-  --vene-button-color: #{$gray-200};
+  --vene-button-color: var(--hds-ui-color-black-20);
   color: $black;
   fill: $black;
 }

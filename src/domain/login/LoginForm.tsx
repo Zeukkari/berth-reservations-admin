@@ -3,13 +3,14 @@ import { Section } from 'hds-react';
 
 import Button from '../../common/button/Button';
 import Layout from '../../common/layout/Layout';
-import HelsinkiLogo from '../../common/helsinkiLogo/HelsinkiLogo';
+import Icon from '../../common/icon/Icon';
+import Header from '../../common/header/Header';
 import styles from '../../common/header/header.module.scss';
 
-const Header = () => (
-  <header className={styles.header}>
-    <HelsinkiLogo color="white" />
-  </header>
+const CustomHeader = () => (
+  <Header>
+    <Icon name="helsinkiLogo" size="large" rectangle={true} color="white" />
+  </Header>
 );
 
 type Props = {
@@ -31,7 +32,7 @@ export default class LoginForm extends Component<Props> {
 
   render() {
     return (
-      <Layout header={<Header />} sidebar={<div></div>}>
+      <Layout header={<CustomHeader />} sidebar={<div></div>}>
         <Section color="secondary">
           <h1>Prototype stuff</h1>
           <p>Insert any syntactically valid email. </p>

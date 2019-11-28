@@ -2,7 +2,7 @@
 @import 'colours';
 
 .icon {
-  --icon-stroke-color: #{$black};
+  --icon-stroke-color: var(--hds-ui-color-black-90);
   box-sizing: content-box;
   fill: var(--icon-stroke-color);
   display: inline-block;
@@ -40,19 +40,19 @@
 }
 
 .brand {
-  --icon-stroke-color: #{$blue-500};
+  --icon-stroke-color: var(--hds-theme-color-primary);
 }
 
 .white {
-  --icon-stroke-color: white;
+  --icon-stroke-color: var(--hds-ui-color-white);
 }
 
 .secondary {
-  --icon-stroke-color: #{$gray-200};
+  --icon-stroke-color: var(--hds-ui-color-info);
 }
 
 .critical {
-  --icon-stroke-color: #{$red-500};
+  --icon-stroke-color: var(--hds-ui-color-error);
 }
 
 .outlined {
