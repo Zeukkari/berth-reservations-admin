@@ -1,16 +1,19 @@
 import React from 'react';
 import { useApolloClient } from '@apollo/react-hooks';
 
+import Button from '../../common/button/Button';
+
 export default function LogoutButton() {
   const client = useApolloClient();
   return (
-    <button
+    <Button
+      color="secondary"
       onClick={() => {
         client.writeData({ data: { isLoggedIn: false } });
         localStorage.clear();
       }}
     >
       Logout
-    </button>
+    </Button>
   );
 }

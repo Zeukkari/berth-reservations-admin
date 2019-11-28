@@ -1,11 +1,11 @@
 import React from 'react';
 import { useQuery } from '@apollo/react-hooks';
 import { gql } from 'apollo-boost';
+import { Section, Notification } from 'hds-react';
 
 import HarborsPage from '../harbors/HarborsPageContainer';
 import List from '../../common/list/List';
 import LabelValuePair from '../../common/labelValuePair/LabelValuePair';
-import styles from './debugPage.module.scss';
 import ListItem from '../../common/list/ListItem';
 import LogoutButton from '../login/LogoutButton';
 import Login from '../login/Login';
@@ -25,25 +25,32 @@ const IndividualHarborPage: React.SFC = ({ children }) => {
   const { isLoggedIn, cartItems } = data;
 
   return (
-    <div className={styles.individualHarborPage}>
-      <LabelValuePair
-        label="isLoggedIn"
-        value={isLoggedIn ? 'true' : 'false'}
-      />
-      {isLoggedIn && <LogoutButton />}
+    <>
+      <Section color="secondary">
+        <Notification labelText="debug page">
+          <LabelValuePair
+            label="isLoggedIn"
+            value={isLoggedIn ? 'true' : 'false'}
+          />
+          {isLoggedIn && <LogoutButton />}
 
-      {!isLoggedIn && <Login />}
+          {!isLoggedIn && <Login />}
+        </Notification>
+      </Section>
 
-      <div>
-        <h1>selected harbor id's:</h1>
-        <List>
-          {cartItems &&
-            cartItems.length > 0 &&
-            cartItems.map((item: any) => <ListItem>{item}</ListItem>)}
-        </List>
-      </div>
-      <HarborsPage />
-    </div>
+      <Section color="plain">
+        <Notification labelText="selected harbor id's:">
+          <List>
+            {cartItems &&
+              cartItems.length > 0 &&
+              cartItems.map((item: any) => (
+                <ListItem key={item}>{item}</ListItem>
+              ))}
+          </List>
+          <HarborsPage />
+        </Notification>
+      </Section>
+    </>
   );
 };
 
