@@ -1,20 +1,20 @@
-import { gql } from 'apollo-boost';
+import gql from 'graphql-tag';
 
 export const GET_CART_ITEMS = gql`
   query GetCartItems {
-    cartItems @client
+    cartItems @client(always: true)
   }
 `;
 
 export const TOGGLE_CART = gql`
   mutation addOrRemoveFromCart($launchId: ID!) {
-    addOrRemoveFromCart(id: $launchId) @client
+    addOrRemoveFromCart(id: $launchId) @client(always: true)
   }
 `;
 
 export const IS_LOGGED_IN = gql`
   query IsUserLoggedIn {
-    isLoggedIn @client
+    isLoggedIn @client(always: true)
   }
 `;
 
@@ -29,7 +29,7 @@ export const typeDefs = gql`
   }
 
   extend type Mutation {
-    addOrRemoveFromCart(id: ID!): [BerthTypeNode]
+    addOrRemoveFromCart(id: ID!): [String]
   }
 `;
 
