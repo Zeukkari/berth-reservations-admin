@@ -23,47 +23,60 @@ const Page: React.SFC = ({ children }) => {
     </Header>
   );
 
-  return (
-    <Layout
-      header={<PageHeader />}
-      sidebar={
-        <Sidebar>
-          {[
+  /*
+
+  <div style={{ backgroundColor: 'grey', height: '100vh' }}>
+  <Sidebar>
+    <Expandable label="Home page">
+      <div>one</div>
+      <div>two</div>
+    </Expandable>
+    <Expandable label="Harbors" />
+  </Sidebar>
+</div>
+
+
+
+
+*/
+
+  const SideBarContent = () => (
+    <Sidebar>
+      {[
+        <Expandable
+          key="harbors"
+          onClick={() => history.push('/harbors')}
+          label={
             <InternalLink to="harbors">
               <Button
                 variant="text"
-                color="brand"
-                icon={<Icon name="registeredBoat" color="secondary" />}
+                icon={<Icon name="fence" color="standard" />}
               >
                 <Text bold>{t('common.sidebar.harbors')}</Text>
               </Button>
-            </InternalLink>,
+            </InternalLink>
+          }
+        ></Expandable>,
+        <Expandable
+          key="customers"
+          onClick={() => history.push('/customers')}
+          label={
             <InternalLink to="customers">
               <Button
                 variant="text"
-                icon={<Icon name="individual" color="secondary" />}
+                icon={<Icon name="individual" color="standard" />}
               >
                 <Text bold>{t('common.sidebar.customers')}</Text>
               </Button>
-            </InternalLink>,
+            </InternalLink>
+          }
+        ></Expandable>,
+      ]}
+    </Sidebar>
+  );
 
-            <Expandable
-              key="debug"
-              label={
-                <InternalLink to="debug">
-                  <Button
-                    variant="text"
-                    icon={<Icon name="dollyEmpty" color="secondary" />}
-                  >
-                    <Text bold>DEBUG</Text>
-                  </Button>
-                </InternalLink>
-              }
-            ></Expandable>,
-          ]}
-        </Sidebar>
-      }
-    >
+  return (
+    <Layout header={<PageHeader />} sidebar={<SideBarContent />}>
       {children}
     </Layout>
   );
