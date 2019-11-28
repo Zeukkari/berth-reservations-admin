@@ -3,7 +3,7 @@ import { useQuery } from '@apollo/react-hooks';
 import { gql } from 'apollo-boost';
 import { Section, Notification } from 'hds-react';
 
-import HarborsPage from '../harbors/HarborsPageContainer';
+import HarborsPage from '../login/HarborsPageContainer';
 import List from '../../common/list/List';
 import LabelValuePair from '../../common/labelValuePair/LabelValuePair';
 import ListItem from '../../common/list/ListItem';
