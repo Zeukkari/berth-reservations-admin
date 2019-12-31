@@ -1,21 +1,26 @@
-@import 'spacings';
-@import 'breakpoints';
+@import "spacings";
+@import "breakpoints";
+@import "~hds-core/lib/helsinki.css";
 
-$noSidebar: 'header  header' 'content content' 'footer  footer';
+$noSidebar: "header  header" "content content" "footer  footer";
 
 .layout {
   display: grid;
   grid-template-columns: minmax(units(16), max-content) 4fr;
   grid-template-rows: minmax(units(4), min-content) 1fr auto;
   grid-template-areas:
-    'header  header'
-    'side   content'
-    'footer  footer';
+    "header  header"
+    "side   content"
+    "footer  footer";
 
   height: 100vh;
+  background-color: var(--hds-ui-color-white);
+  color: var(--hds-ui-color-black);
 
   .header {
     grid-area: header;
+    background-color: var(--hds-theme-color-primary);
+    color: var(--hds-theme-color-primary-heading);
   }
 
   .sidebar {
@@ -25,6 +30,8 @@ $noSidebar: 'header  header' 'content content' 'footer  footer';
   .content {
     grid-area: content;
     overflow-y: scroll;
+    // background-color: var(--hds-theme-color-primary);
+    color: var(--hds-ui-color-black);
   }
 
   .footer {

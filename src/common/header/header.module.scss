@@ -1,8 +1,8 @@
-@import 'colours';
-@import 'spacings';
+@import "colours";
+@import "spacings";
 
 .header {
-  background-color: $blue-500;
+  background-color: var(--hds-theme-color-primary);
   padding: units(0.5) units(2);
   color: $white;
   fill: $white;

@@ -2,44 +2,59 @@
 @import 'colours';
 
 .icon {
-  --icon-stroke-color: #{$black};
-  --icon-dimension: #{units(1.5)};
-
-  display: inline-block;
-  vertical-align: top;
+  --icon-stroke-color: var(--hds-ui-color-black-90);
   box-sizing: content-box;
+  fill: var(--icon-stroke-color);
+  display: inline-block;
+  vertical-align: middle;
+  shape-rendering: inherit;
+  transform: translate3d(0, 0, 0);
+
+  color: var(--hds-theme-color-body);
+
   width: var(--icon-dimension);
   height: var(--icon-dimension);
-  fill: var(--icon-stroke-color);
 }
 
-.shape {
-  width: 100%;
-  height: 100%;
+.rectangle {
+  width: calc(var(--icon-dimension) * 2);
 }
 
 .standard {
   --icon-stroke-color: inherit;
+  --icon-dimension: 2.25rem;
 }
 
 .small {
-  --icon-dimension: #{units(1)};
+  --icon-dimension: 1.5rem;
 }
 
 .large {
-  --icon-dimension: #{units(2)};
+  --icon-dimension: 3rem;
+}
+
+.xlarge {
+  --icon-dimension: 6rem;
+}
+
+.xxlarge {
+  --icon-dimension: 12rem;
 }
 
 .brand {
-  --icon-stroke-color: #{$blue-500};
+  --icon-stroke-color: var(--hds-theme-color-primary);
+}
+
+.white {
+  --icon-stroke-color: var(--hds-ui-color-white);
 }
 
 .secondary {
-  --icon-stroke-color: #{$gray-200};
+  --icon-stroke-color: var(--hds-theme-color-body);
 }
 
 .critical {
-  --icon-stroke-color: #{$red-500};
+  --icon-stroke-color: var(--hds-ui-color-error);
 }
 
 .outlined {

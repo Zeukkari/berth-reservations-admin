@@ -1,5 +1,5 @@
-@import 'spacings';
-@import 'colours';
+@import "spacings";
+@import "colours";
 
 $padding: units(1);
 
@@ -8,21 +8,19 @@ $padding: units(1);
   flex-direction: column;
   width: auto;
 
-  background-color: $gray-100;
-}
+  background-color: var(--hds-ui-color-black-10);
 
-.header {
-  width: auto;
-  background-color: $blue-500;
-  padding: $padding;
-  margin-bottom: units(0.5);
-  font-weight: bold;
-  color: white;
-}
-
-.body {
-  padding: $padding;
-  background-color: $white;
+  header {
+    width: auto;
+    background-color: var(--hds-brand-color-primary);
+    padding: units(0.5) units(1);
+    margin: 0;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  section {
+    padding: units(0.5) units(1);
+  }
 }
 
 .standard {
@@ -30,13 +28,13 @@ $padding: units(1);
 }
 
 .brand {
-  background-color: $blue-500;
+  background-color: var(--hds-brand-color-primary);
 }
 
 .primary {
-  background-color: $gray-100;
+  background-color: var(--hds-ui-color-black-10);
 }
 
 .secondary {
-  background-color: $gray-200;
+  background-color: var(--hds-ui-color-black-20);
 }
