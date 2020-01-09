@@ -1,10 +1,15 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
-// For some reason eslint import plugin is unable to detect the following type
-// eslint-disable-next-line
+import { useQuery } from '@apollo/react-hooks';
 import { Column } from 'react-table';
+import { useTranslation } from 'react-i18next';
 
+import { CUSTOMER_QUERY } from './queries';
+import { getCustomersData, CustomerData } from './utils';
+import { CUSTOMERS } from './__generated__/CUSTOMERS';
+import CustomersPage from './CustomersPage';
 import Table from '../../common/table/Table';
+
+type ColumnType = Column<CustomerData> & { accessor: keyof TableData };
 
 export interface TableData {
   goToDetails?: string;
