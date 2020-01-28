@@ -1,5 +1,6 @@
-import './assets/styles/main.scss';
+// import './assets/styles/main.scss';
 import './locales/i18n';
+import './font.css';
 import 'hds-core/lib/helsinki.css';
 
 import * as Sentry from '@sentry/browser';
