@@ -7,7 +7,7 @@ export default ({ className = '' }: Props) => (
     xmlns="http://www.w3.org/2000/svg"
     width="100%"
     height="100%"
-    viewBox="0 0 199.404 199.404"
+    viewBox="0 0 480 480"
     className={className}
   >
     <path d="M294.37 344.75h32v55.77h-32zM200.584 355.229l41.577-41.664 22.651 22.604-41.577 41.664zM362.922 336.221l22.65-22.604 41.577 41.664-22.65 22.604z" />
