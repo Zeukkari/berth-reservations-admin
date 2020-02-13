@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bf26ea7a.chunk.css",
+    "main.js": "/main.30dd5751d375ea9300ab.bundle.js",
+    "main.css.map": "/static/css/main.bf26ea7a.chunk.css.map",
+    "main.js.map": "/main.30dd5751d375ea9300ab.bundle.js.map",
+    "runtime~main.js": "/runtime~main.30dd5751d375ea9300ab.bundle.js",
+    "runtime~main.js.map": "/runtime~main.30dd5751d375ea9300ab.bundle.js.map",
+    "vendors~main.css": "/static/css/vendors~main.33c61e2e.chunk.css",
+    "vendors~main.js": "/vendors~main.30dd5751d375ea9300ab.bundle.js",
+    "vendors~main.css.map": "/static/css/vendors~main.33c61e2e.chunk.css.map",
+    "vendors~main.js.map": "/vendors~main.30dd5751d375ea9300ab.bundle.js.map",
+    "iframe.html": "/iframe.html",
+    "precache-manifest.6f597bcc51bb0daab37007fa6e4bbc52.js": "/precache-manifest.6f597bcc51bb0daab37007fa6e4bbc52.js",
+    "service-worker.js": "/service-worker.js",
+    "static/media/check.ad6643e3.svg": "/static/media/check.ad6643e3.svg",
+    "static/media/helsinki-logo.a9d6a33b.svg": "/static/media/helsinki-logo.a9d6a33b.svg",
+    "vendors~main.30dd5751d375ea9300ab.bundle.js.LICENSE.txt": "/vendors~main.30dd5751d375ea9300ab.bundle.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "runtime~main.30dd5751d375ea9300ab.bundle.js",
+    "static/css/vendors~main.33c61e2e.chunk.css",
+    "vendors~main.30dd5751d375ea9300ab.bundle.js",
+    "static/css/main.bf26ea7a.chunk.css",
+    "main.30dd5751d375ea9300ab.bundle.js"
+  ]
+}
